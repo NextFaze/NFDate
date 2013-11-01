@@ -12,4 +12,3 @@ Date/Time manipulation library for objective c
 3. Add `NFDate` to target's Target Dependencies in Build Phases.
 4. Add `libNFDate.a` in Link Binary with Libraries.
 5. Add to header search paths `ThirdParty/` with recursive selected.
-
