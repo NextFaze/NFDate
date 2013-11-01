@@ -16,6 +16,8 @@
 		B52224D31823384100C0A44E /* libNFDate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224BB1823384100C0A44E /* libNFDate.a */; };
 		B52224D91823384100C0A44E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B52224D71823384100C0A44E /* InfoPlist.strings */; };
 		B52224DB1823384100C0A44E /* NFDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224DA1823384100C0A44E /* NFDateTests.m */; };
+		B52224E81823386A00C0A44E /* NFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E51823386A00C0A44E /* NFDateFormatter.m */; };
+		B52224E91823386A00C0A44E /* NFDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E71823386A00C0A44E /* NFDateTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		B52224D61823384100C0A44E /* NFDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NFDateTests-Info.plist"; sourceTree = "<group>"; };
 		B52224D81823384100C0A44E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B52224DA1823384100C0A44E /* NFDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFDateTests.m; sourceTree = "<group>"; };
+		B52224E41823386A00C0A44E /* NFDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateFormatter.h; sourceTree = "<group>"; };
+		B52224E51823386A00C0A44E /* NFDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateFormatter.m; sourceTree = "<group>"; };
+		B52224E61823386A00C0A44E /* NFDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateTime.h; sourceTree = "<group>"; };
+		B52224E71823386A00C0A44E /* NFDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateTime.m; sourceTree = "<group>"; };
+		B52224EA1823387C00C0A44E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		B52224B21823384100C0A44E = {
 			isa = PBXGroup;
 			children = (
+				B52224EA1823387C00C0A44E /* README.md */,
 				B52224C01823384100C0A44E /* NFDate */,
 				B52224D41823384100C0A44E /* NFDateTests */,
 				B52224BD1823384100C0A44E /* Frameworks */,
@@ -110,6 +118,10 @@
 		B52224C01823384100C0A44E /* NFDate */ = {
 			isa = PBXGroup;
 			children = (
+				B52224E41823386A00C0A44E /* NFDateFormatter.h */,
+				B52224E51823386A00C0A44E /* NFDateFormatter.m */,
+				B52224E61823386A00C0A44E /* NFDateTime.h */,
+				B52224E71823386A00C0A44E /* NFDateTime.m */,
 				B52224C31823384100C0A44E /* NFDate.h */,
 				B52224C51823384100C0A44E /* NFDate.m */,
 				B52224C11823384100C0A44E /* Supporting Files */,
@@ -224,7 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52224E81823386A00C0A44E /* NFDateFormatter.m in Sources */,
 				B52224C61823384100C0A44E /* NFDate.m in Sources */,
+				B52224E91823386A00C0A44E /* NFDateTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
