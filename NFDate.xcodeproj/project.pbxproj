@@ -36,7 +36,6 @@
 		B598C6FA18287BB80030DE15 /* NFDateChainParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6F918287BB80030DE15 /* NFDateChainParser.m */; };
 		B598C70618287EE00030DE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224BE1823384100C0A44E /* Foundation.framework */; };
 		B598C70818287EE00030DE15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C70718287EE00030DE15 /* CoreGraphics.framework */; };
-		B598C70918287EE00030DE15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224CF1823384100C0A44E /* UIKit.framework */; };
 		B598C70F18287EE10030DE15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B598C70D18287EE10030DE15 /* InfoPlist.strings */; };
 		B598C71118287EE10030DE15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C71018287EE10030DE15 /* main.m */; };
 		B598C73318287F3F0030DE15 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C73118287F370030DE15 /* GHUnitIOS.framework */; };
@@ -105,11 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B598C73A182881680030DE15 /* QuartzCore.framework in Frameworks */,
 				B598C738182881240030DE15 /* UIKit.framework in Frameworks */,
+				B598C73A182881680030DE15 /* QuartzCore.framework in Frameworks */,
 				B598C70818287EE00030DE15 /* CoreGraphics.framework in Frameworks */,
 				B598C73318287F3F0030DE15 /* GHUnitIOS.framework in Frameworks */,
-				B598C70918287EE00030DE15 /* UIKit.framework in Frameworks */,
 				B598C70618287EE00030DE15 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +229,7 @@
 		};
 		B598C70418287EE00030DE15 /* NFDateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B598C72A18287EE10030DE15 /* Build configuration list for PBXNativeTarget "NFDateTests" */;
+			buildConfigurationList = B574205D1828B01C00865E9B /* Build configuration list for PBXNativeTarget "NFDateTests" */;
 			buildPhases = (
 				B598C70118287EE00030DE15 /* Sources */,
 				B598C70218287EE00030DE15 /* Frameworks */,
@@ -362,6 +360,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/ThirdParty;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -379,6 +378,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -401,6 +401,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/ThirdParty;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -410,6 +411,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -424,6 +426,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NFDate/NFDate-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -440,9 +443,43 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NFDate/NFDate-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B574205B1828B01C00865E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/NFDateTests/NFDateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = NFDateTests;
+			};
+			name = Debug;
+		};
+		B574205C1828B01C00865E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "$(SRCROOT)/NFDateTests/NFDateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = NFDateTests;
 			};
 			name = Release;
 		};
@@ -457,64 +494,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B598C72B18287EE10030DE15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					$SRCROOT/ThirdParty,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NFDateTests/NFDateTests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "NFDateTests/NFDateTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = $SRCROOT/ThirdParty;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		B598C72C18287EE10030DE15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					$SRCROOT/ThirdParty,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NFDateTests/NFDateTests-Prefix.pch";
-				INFOPLIST_FILE = "NFDateTests/NFDateTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = $SRCROOT/ThirdParty;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -539,20 +518,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B574205D1828B01C00865E9B /* Build configuration list for PBXNativeTarget "NFDateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B574205B1828B01C00865E9B /* Debug */,
+				B574205C1828B01C00865E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B598C6F6182879640030DE15 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B598C6F4182879640030DE15 /* Debug */,
 				B598C6F5182879640030DE15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B598C72A18287EE10030DE15 /* Build configuration list for PBXNativeTarget "NFDateTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B598C72B18287EE10030DE15 /* Debug */,
-				B598C72C18287EE10030DE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
