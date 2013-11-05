@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NFDateImpl.h"
 #import "NFDateTime.h"
-#import "NFDateMidnight.h"
 #import "NFDateFormatter.h"
-#import "NFDateChainFormatter.h"
+#import "NFDateChainParser.h"

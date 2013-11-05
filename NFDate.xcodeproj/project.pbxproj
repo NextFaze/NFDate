@@ -26,9 +26,14 @@
 		B52224C61823384100C0A44E /* NFDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224C51823384100C0A44E /* NFDate.m */; };
 		B52224E81823386A00C0A44E /* NFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E51823386A00C0A44E /* NFDateFormatter.m */; };
 		B52224E91823386A00C0A44E /* NFDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E71823386A00C0A44E /* NFDateTime.m */; };
-		B598C6FA18287BB80030DE15 /* NFDateChainFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6F918287BB80030DE15 /* NFDateChainFormatter.m */; };
-		B598C6FD18287C430030DE15 /* NFDateMidnight.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6FC18287C430030DE15 /* NFDateMidnight.m */; };
-		B598C70018287C670030DE15 /* NFDateBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6FF18287C670030DE15 /* NFDateBase.m */; };
+		B574204D1828909600865E9B /* NFDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B574204C1828909600865E9B /* NFDateTests.m */; };
+		B574204E1828983600865E9B /* NFDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224C51823384100C0A44E /* NFDate.m */; };
+		B57420501828983B00865E9B /* NFDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E71823386A00C0A44E /* NFDateTime.m */; };
+		B57420511828983F00865E9B /* NFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E51823386A00C0A44E /* NFDateFormatter.m */; };
+		B57420521828984100865E9B /* NFDateChainParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6F918287BB80030DE15 /* NFDateChainParser.m */; };
+		B57420531828984400865E9B /* NFDateFormatterISO.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C73C182888DF0030DE15 /* NFDateFormatterISO.m */; };
+		B57420561828A3CD00865E9B /* NFDateFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B57420551828A3CD00865E9B /* NFDateFormatterTests.m */; };
+		B598C6FA18287BB80030DE15 /* NFDateChainParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6F918287BB80030DE15 /* NFDateChainParser.m */; };
 		B598C70618287EE00030DE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224BE1823384100C0A44E /* Foundation.framework */; };
 		B598C70818287EE00030DE15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C70718287EE00030DE15 /* CoreGraphics.framework */; };
 		B598C70918287EE00030DE15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224CF1823384100C0A44E /* UIKit.framework */; };
@@ -38,6 +43,7 @@
 		B598C73618287F9C0030DE15 /* NFDateTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C73518287F9C0030DE15 /* NFDateTimeTests.m */; };
 		B598C738182881240030DE15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C737182881240030DE15 /* UIKit.framework */; };
 		B598C73A182881680030DE15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C739182881680030DE15 /* QuartzCore.framework */; };
+		B598C73D182888DF0030DE15 /* NFDateFormatterISO.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C73C182888DF0030DE15 /* NFDateFormatterISO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,12 +71,11 @@
 		B52224E61823386A00C0A44E /* NFDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateTime.h; sourceTree = "<group>"; };
 		B52224E71823386A00C0A44E /* NFDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateTime.m; sourceTree = "<group>"; };
 		B52224EA1823387C00C0A44E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		B598C6F818287BB80030DE15 /* NFDateChainFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateChainFormatter.h; sourceTree = "<group>"; };
-		B598C6F918287BB80030DE15 /* NFDateChainFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateChainFormatter.m; sourceTree = "<group>"; };
-		B598C6FB18287C430030DE15 /* NFDateMidnight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateMidnight.h; sourceTree = "<group>"; };
-		B598C6FC18287C430030DE15 /* NFDateMidnight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateMidnight.m; sourceTree = "<group>"; };
-		B598C6FE18287C670030DE15 /* NFDateBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateBase.h; sourceTree = "<group>"; };
-		B598C6FF18287C670030DE15 /* NFDateBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateBase.m; sourceTree = "<group>"; };
+		B574204C1828909600865E9B /* NFDateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateTests.m; sourceTree = "<group>"; };
+		B57420551828A3CD00865E9B /* NFDateFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateFormatterTests.m; sourceTree = "<group>"; };
+		B57420571828AAB200865E9B /* NFDatePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDatePrivate.h; sourceTree = "<group>"; };
+		B598C6F818287BB80030DE15 /* NFDateChainParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateChainParser.h; sourceTree = "<group>"; };
+		B598C6F918287BB80030DE15 /* NFDateChainParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateChainParser.m; sourceTree = "<group>"; };
 		B598C70518287EE00030DE15 /* NFDateTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFDateTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B598C70718287EE00030DE15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B598C70C18287EE10030DE15 /* NFDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NFDateTests-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +86,10 @@
 		B598C73518287F9C0030DE15 /* NFDateTimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateTimeTests.m; sourceTree = "<group>"; };
 		B598C737182881240030DE15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B598C739182881680030DE15 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B598C73B182888DF0030DE15 /* NFDateFormatterISO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateFormatterISO.h; sourceTree = "<group>"; };
+		B598C73C182888DF0030DE15 /* NFDateFormatterISO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateFormatterISO.m; sourceTree = "<group>"; };
+		B598C73E18288B770030DE15 /* NFDateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateImpl.h; sourceTree = "<group>"; };
+		B598C73F18288C2D0030DE15 /* NFDateParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateParserProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,17 +154,18 @@
 			isa = PBXGroup;
 			children = (
 				B52224C31823384100C0A44E /* NFDate.h */,
+				B598C73E18288B770030DE15 /* NFDateImpl.h */,
+				B57420571828AAB200865E9B /* NFDatePrivate.h */,
 				B52224C51823384100C0A44E /* NFDate.m */,
-				B598C6FE18287C670030DE15 /* NFDateBase.h */,
-				B598C6FF18287C670030DE15 /* NFDateBase.m */,
 				B52224E61823386A00C0A44E /* NFDateTime.h */,
 				B52224E71823386A00C0A44E /* NFDateTime.m */,
-				B598C6FB18287C430030DE15 /* NFDateMidnight.h */,
-				B598C6FC18287C430030DE15 /* NFDateMidnight.m */,
+				B598C73F18288C2D0030DE15 /* NFDateParserProtocol.h */,
 				B52224E41823386A00C0A44E /* NFDateFormatter.h */,
 				B52224E51823386A00C0A44E /* NFDateFormatter.m */,
-				B598C6F818287BB80030DE15 /* NFDateChainFormatter.h */,
-				B598C6F918287BB80030DE15 /* NFDateChainFormatter.m */,
+				B598C6F818287BB80030DE15 /* NFDateChainParser.h */,
+				B598C6F918287BB80030DE15 /* NFDateChainParser.m */,
+				B598C73B182888DF0030DE15 /* NFDateFormatterISO.h */,
+				B598C73C182888DF0030DE15 /* NFDateFormatterISO.m */,
 				B52224C11823384100C0A44E /* Supporting Files */,
 			);
 			path = NFDate;
@@ -173,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				B598C73518287F9C0030DE15 /* NFDateTimeTests.m */,
+				B574204C1828909600865E9B /* NFDateTests.m */,
+				B57420551828A3CD00865E9B /* NFDateFormatterTests.m */,
 				B598C70B18287EE10030DE15 /* Supporting Files */,
 			);
 			path = NFDateTests;
@@ -285,7 +297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"NextFaze\";\ncompanyID=\"com.nextfaze\";\ncompanyURL=\"http://nextfaze.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/doc\";\n# End constants\n/opt/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"NextFaze\";\ncompanyID=\"com.nextfaze\";\ncompanyURL=\"http://nextfaze.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/doc/NFDate\";\n# End constants\n/opt/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore ThirdParty \\\n\"${PROJECT_DIR}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -295,10 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B52224E81823386A00C0A44E /* NFDateFormatter.m in Sources */,
-				B598C6FD18287C430030DE15 /* NFDateMidnight.m in Sources */,
-				B598C70018287C670030DE15 /* NFDateBase.m in Sources */,
+				B598C73D182888DF0030DE15 /* NFDateFormatterISO.m in Sources */,
 				B52224C61823384100C0A44E /* NFDate.m in Sources */,
-				B598C6FA18287BB80030DE15 /* NFDateChainFormatter.m in Sources */,
+				B598C6FA18287BB80030DE15 /* NFDateChainParser.m in Sources */,
 				B52224E91823386A00C0A44E /* NFDateTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57420531828984400865E9B /* NFDateFormatterISO.m in Sources */,
+				B57420521828984100865E9B /* NFDateChainParser.m in Sources */,
+				B57420561828A3CD00865E9B /* NFDateFormatterTests.m in Sources */,
+				B574204D1828909600865E9B /* NFDateTests.m in Sources */,
+				B574204E1828983600865E9B /* NFDate.m in Sources */,
+				B57420501828983B00865E9B /* NFDateTime.m in Sources */,
 				B598C73618287F9C0030DE15 /* NFDateTimeTests.m in Sources */,
+				B57420511828983F00865E9B /* NFDateFormatter.m in Sources */,
 				B598C71118287EE10030DE15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +546,7 @@
 				B598C6F5182879640030DE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B598C72A18287EE10030DE15 /* Build configuration list for PBXNativeTarget "NFDateTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +555,7 @@
 				B598C72C18287EE10030DE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

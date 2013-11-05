@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NFDateBase.h"
+#import "NFDateImpl.h"
 
-@interface NFDateTime : NFDateBase
+@interface NFDateTime : NFDate
+
+@property (nonatomic, readonly) NSUInteger hour;
+@property (nonatomic, readonly) NSUInteger minute;
+@property (nonatomic, readonly) NSUInteger second;
 
 - (NFDateTime *)plusHours:(int)hours;
 

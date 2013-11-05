@@ -6,12 +6,8 @@
 //  Copyright (c) 2013 NextFaze. All rights reserved.
 //
 
-#import "NFDate.h"
-
-@interface NFDate ()
-@property (nonatomic, strong) NSDate *date;
-@property (nonatomic, strong) NSTimeZone *timezone;
-@end
+#import "NFDateImpl.h"
+#import "NFDatePrivate.h"
 
 @implementation NFDate
 
@@ -60,6 +56,31 @@
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [calendar dateByAddingComponents:components toDate:self.date options:0];
     return [[[self class] alloc] initWithDate:date timezone:self.timezone];
+}
+
+- (NSDateComponents *)components {
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:0xffff fromDate:self.date];
+    return components;
+}
+
+#pragma mark -
+
+- (NSUInteger)year {
+    return [[self components] year];
+}
+
+- (NSUInteger)month {
+    return [[self components] month];
+}
+
+- (NSUInteger)dayOfMonth {
+    return [[self components] day];
+}
+
+- (NSUInteger)dayOfYear {
+    // TODO
+    return 0;
 }
 
 @end

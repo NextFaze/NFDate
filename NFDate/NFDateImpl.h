@@ -1,5 +1,5 @@
 //
-//  NFDateBase.h
+//  NFDateImpl.h
 //  NFDate
 //
 //  Created by Andrew Williams on 5/11/2013.
@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-/**
- Abstract superclass of all date objects
- */
-@interface NFDateBase : NSObject
+@interface NFDate : NSObject
 
 @property (nonatomic, readonly) NSTimeZone *timezone;
+
+@property (nonatomic, readonly) NSUInteger year;
+@property (nonatomic, readonly) NSUInteger month;
+@property (nonatomic, readonly) NSUInteger day;
+@property (nonatomic, readonly) NSUInteger dayOfYear;
 
 - (id)initWithDate:(NSDate *)date;
 
@@ -25,10 +27,8 @@
  */
 - (id)initWithString:(NSString *)dateString;
 
-- (NFDateBase *)plusYears:(int)years;
-- (NFDateBase *)plusMonths:(int)months;
-- (NFDateBase *)plusDays:(int)days;
-
-- (NFDateBase *)plusComponents:(NSDateComponents *)components;
+- (NFDate *)plusYears:(int)years;
+- (NFDate *)plusMonths:(int)months;
+- (NFDate *)plusDays:(int)days;
 
 @end

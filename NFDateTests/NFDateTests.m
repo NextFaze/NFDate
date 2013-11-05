@@ -1,34 +1,23 @@
 //
 //  NFDateTests.m
-//  NFDateTests
+//  NFDate
 //
-//  Created by Andrew Williams on 1/11/2013.
+//  Created by Andrew Williams on 5/11/2013.
 //  Copyright (c) 2013 NextFaze. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import <GHUnitIOS/GHUnit.h>
+#import "NFDate.h"
 
-@interface NFDateTests : XCTestCase
+@interface NFDateTests : GHTestCase
 
 @end
 
 @implementation NFDateTests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testPlusYears {
+    NSDate *d = [NSDate dateWithTimeIntervalSince1970:123];
+    NFDate *date = [[NFDate alloc] initWithDate:d];
 }
 
 @end

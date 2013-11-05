@@ -7,6 +7,7 @@
 //
 
 #import "NFDateTime.h"
+#import "NFDatePrivate.h"
 
 @implementation NFDateTime
 
@@ -26,6 +27,20 @@
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.second = seconds;
     return [self plusComponents:components];
+}
+
+#pragma mark -
+
+- (NSUInteger)hour {
+    return [[self components] hour];
+}
+
+- (NSUInteger)minute {
+    return [[self components] minute];
+}
+
+- (NSUInteger)second {
+    return [[self components] second];
 }
 
 @end
