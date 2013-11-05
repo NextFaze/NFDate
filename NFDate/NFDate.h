@@ -7,19 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface NFDate : NSObject
-
-@property (nonatomic, readonly) NSTimeZone *timezone;
-
-- (id)initWithDate:(NSDate *)date;
-- (id)initWithDate:(NSDate *)date timezone:(NSTimeZone *)timezone;
-- (id)initWithString:(NSString *)dateString;
-
-- (NFDate *)plusYears:(int)years;
-- (NFDate *)plusMonths:(int)months;
-- (NFDate *)plusDays:(int)days;
-
-- (NFDate *)plusComponents:(NSDateComponents *)components;
-
-@end
+#import "NFDateTime.h"
+#import "NFDateMidnight.h"
+#import "NFDateFormatter.h"
+#import "NFDateChainFormatter.h"

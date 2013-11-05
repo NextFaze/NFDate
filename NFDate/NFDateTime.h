@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NFDate.h"
+#import "NFDateBase.h"
 
-@interface NFDateTime : NFDate
+@interface NFDateTime : NFDateBase
 
-- (NFDate *)plusHours:(int)hours;
-- (NFDate *)plusMinutes:(int)minutes;
-- (NFDate *)plusSeconds:(int)seconds;
+- (NFDateTime *)plusHours:(int)hours;
+
+- (NFDateTime *)plusMinutes:(int)minutes;
+
+- (NFDateTime *)plusSeconds:(int)seconds;
 
 @end

@@ -6,29 +6,39 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B598C6F3182879640030DE15 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B598C6F6182879640030DE15 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				B598C6F71828798D0030DE15 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		B52224BF1823384100C0A44E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224BE1823384100C0A44E /* Foundation.framework */; };
 		B52224C41823384100C0A44E /* NFDate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B52224C31823384100C0A44E /* NFDate.h */; };
 		B52224C61823384100C0A44E /* NFDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224C51823384100C0A44E /* NFDate.m */; };
-		B52224CD1823384100C0A44E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224CC1823384100C0A44E /* XCTest.framework */; };
-		B52224CE1823384100C0A44E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224BE1823384100C0A44E /* Foundation.framework */; };
-		B52224D01823384100C0A44E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224CF1823384100C0A44E /* UIKit.framework */; };
-		B52224D31823384100C0A44E /* libNFDate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224BB1823384100C0A44E /* libNFDate.a */; };
-		B52224D91823384100C0A44E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B52224D71823384100C0A44E /* InfoPlist.strings */; };
-		B52224DB1823384100C0A44E /* NFDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224DA1823384100C0A44E /* NFDateTests.m */; };
 		B52224E81823386A00C0A44E /* NFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E51823386A00C0A44E /* NFDateFormatter.m */; };
 		B52224E91823386A00C0A44E /* NFDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B52224E71823386A00C0A44E /* NFDateTime.m */; };
+		B598C6FA18287BB80030DE15 /* NFDateChainFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6F918287BB80030DE15 /* NFDateChainFormatter.m */; };
+		B598C6FD18287C430030DE15 /* NFDateMidnight.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6FC18287C430030DE15 /* NFDateMidnight.m */; };
+		B598C70018287C670030DE15 /* NFDateBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C6FF18287C670030DE15 /* NFDateBase.m */; };
+		B598C70618287EE00030DE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224BE1823384100C0A44E /* Foundation.framework */; };
+		B598C70818287EE00030DE15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C70718287EE00030DE15 /* CoreGraphics.framework */; };
+		B598C70918287EE00030DE15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52224CF1823384100C0A44E /* UIKit.framework */; };
+		B598C70F18287EE10030DE15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B598C70D18287EE10030DE15 /* InfoPlist.strings */; };
+		B598C71118287EE10030DE15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C71018287EE10030DE15 /* main.m */; };
+		B598C73318287F3F0030DE15 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C73118287F370030DE15 /* GHUnitIOS.framework */; };
+		B598C73618287F9C0030DE15 /* NFDateTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B598C73518287F9C0030DE15 /* NFDateTimeTests.m */; };
+		B598C738182881240030DE15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C737182881240030DE15 /* UIKit.framework */; };
+		B598C73A182881680030DE15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B598C739182881680030DE15 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B52224D11823384100C0A44E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B52224B31823384100C0A44E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B52224BA1823384100C0A44E;
-			remoteInfo = NFDate;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B52224B91823384100C0A44E /* CopyFiles */ = {
@@ -49,17 +59,28 @@
 		B52224C21823384100C0A44E /* NFDate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NFDate-Prefix.pch"; sourceTree = "<group>"; };
 		B52224C31823384100C0A44E /* NFDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFDate.h; sourceTree = "<group>"; };
 		B52224C51823384100C0A44E /* NFDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFDate.m; sourceTree = "<group>"; };
-		B52224CB1823384100C0A44E /* NFDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B52224CC1823384100C0A44E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B52224CF1823384100C0A44E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B52224D61823384100C0A44E /* NFDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NFDateTests-Info.plist"; sourceTree = "<group>"; };
-		B52224D81823384100C0A44E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B52224DA1823384100C0A44E /* NFDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFDateTests.m; sourceTree = "<group>"; };
 		B52224E41823386A00C0A44E /* NFDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateFormatter.h; sourceTree = "<group>"; };
 		B52224E51823386A00C0A44E /* NFDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateFormatter.m; sourceTree = "<group>"; };
 		B52224E61823386A00C0A44E /* NFDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateTime.h; sourceTree = "<group>"; };
 		B52224E71823386A00C0A44E /* NFDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateTime.m; sourceTree = "<group>"; };
 		B52224EA1823387C00C0A44E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		B598C6F818287BB80030DE15 /* NFDateChainFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateChainFormatter.h; sourceTree = "<group>"; };
+		B598C6F918287BB80030DE15 /* NFDateChainFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateChainFormatter.m; sourceTree = "<group>"; };
+		B598C6FB18287C430030DE15 /* NFDateMidnight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateMidnight.h; sourceTree = "<group>"; };
+		B598C6FC18287C430030DE15 /* NFDateMidnight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateMidnight.m; sourceTree = "<group>"; };
+		B598C6FE18287C670030DE15 /* NFDateBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDateBase.h; sourceTree = "<group>"; };
+		B598C6FF18287C670030DE15 /* NFDateBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateBase.m; sourceTree = "<group>"; };
+		B598C70518287EE00030DE15 /* NFDateTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFDateTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B598C70718287EE00030DE15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B598C70C18287EE10030DE15 /* NFDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NFDateTests-Info.plist"; sourceTree = "<group>"; };
+		B598C70E18287EE10030DE15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B598C71018287EE10030DE15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B598C71218287EE10030DE15 /* NFDateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NFDateTests-Prefix.pch"; sourceTree = "<group>"; };
+		B598C73118287F370030DE15 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		B598C73518287F9C0030DE15 /* NFDateTimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDateTimeTests.m; sourceTree = "<group>"; };
+		B598C737182881240030DE15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B598C739182881680030DE15 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +92,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B52224C81823384100C0A44E /* Frameworks */ = {
+		B598C70218287EE00030DE15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52224CD1823384100C0A44E /* XCTest.framework in Frameworks */,
-				B52224D01823384100C0A44E /* UIKit.framework in Frameworks */,
-				B52224CE1823384100C0A44E /* Foundation.framework in Frameworks */,
-				B52224D31823384100C0A44E /* libNFDate.a in Frameworks */,
+				B598C73A182881680030DE15 /* QuartzCore.framework in Frameworks */,
+				B598C738182881240030DE15 /* UIKit.framework in Frameworks */,
+				B598C70818287EE00030DE15 /* CoreGraphics.framework in Frameworks */,
+				B598C73318287F3F0030DE15 /* GHUnitIOS.framework in Frameworks */,
+				B598C70918287EE00030DE15 /* UIKit.framework in Frameworks */,
+				B598C70618287EE00030DE15 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +113,8 @@
 			children = (
 				B52224EA1823387C00C0A44E /* README.md */,
 				B52224C01823384100C0A44E /* NFDate */,
-				B52224D41823384100C0A44E /* NFDateTests */,
+				B598C70A18287EE00030DE15 /* NFDateTests */,
+				B598C73018287F370030DE15 /* ThirdParty */,
 				B52224BD1823384100C0A44E /* Frameworks */,
 				B52224BC1823384100C0A44E /* Products */,
 			);
@@ -100,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B52224BB1823384100C0A44E /* libNFDate.a */,
-				B52224CB1823384100C0A44E /* NFDateTests.xctest */,
+				B598C70518287EE00030DE15 /* NFDateTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +132,11 @@
 		B52224BD1823384100C0A44E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B598C739182881680030DE15 /* QuartzCore.framework */,
+				B598C737182881240030DE15 /* UIKit.framework */,
 				B52224BE1823384100C0A44E /* Foundation.framework */,
-				B52224CC1823384100C0A44E /* XCTest.framework */,
 				B52224CF1823384100C0A44E /* UIKit.framework */,
+				B598C70718287EE00030DE15 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,12 +144,18 @@
 		B52224C01823384100C0A44E /* NFDate */ = {
 			isa = PBXGroup;
 			children = (
-				B52224E41823386A00C0A44E /* NFDateFormatter.h */,
-				B52224E51823386A00C0A44E /* NFDateFormatter.m */,
-				B52224E61823386A00C0A44E /* NFDateTime.h */,
-				B52224E71823386A00C0A44E /* NFDateTime.m */,
 				B52224C31823384100C0A44E /* NFDate.h */,
 				B52224C51823384100C0A44E /* NFDate.m */,
+				B598C6FE18287C670030DE15 /* NFDateBase.h */,
+				B598C6FF18287C670030DE15 /* NFDateBase.m */,
+				B52224E61823386A00C0A44E /* NFDateTime.h */,
+				B52224E71823386A00C0A44E /* NFDateTime.m */,
+				B598C6FB18287C430030DE15 /* NFDateMidnight.h */,
+				B598C6FC18287C430030DE15 /* NFDateMidnight.m */,
+				B52224E41823386A00C0A44E /* NFDateFormatter.h */,
+				B52224E51823386A00C0A44E /* NFDateFormatter.m */,
+				B598C6F818287BB80030DE15 /* NFDateChainFormatter.h */,
+				B598C6F918287BB80030DE15 /* NFDateChainFormatter.m */,
 				B52224C11823384100C0A44E /* Supporting Files */,
 			);
 			path = NFDate;
@@ -137,22 +169,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B52224D41823384100C0A44E /* NFDateTests */ = {
+		B598C70A18287EE00030DE15 /* NFDateTests */ = {
 			isa = PBXGroup;
 			children = (
-				B52224DA1823384100C0A44E /* NFDateTests.m */,
-				B52224D51823384100C0A44E /* Supporting Files */,
+				B598C73518287F9C0030DE15 /* NFDateTimeTests.m */,
+				B598C70B18287EE10030DE15 /* Supporting Files */,
 			);
 			path = NFDateTests;
 			sourceTree = "<group>";
 		};
-		B52224D51823384100C0A44E /* Supporting Files */ = {
+		B598C70B18287EE10030DE15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B52224D61823384100C0A44E /* NFDateTests-Info.plist */,
-				B52224D71823384100C0A44E /* InfoPlist.strings */,
+				B598C70C18287EE10030DE15 /* NFDateTests-Info.plist */,
+				B598C70D18287EE10030DE15 /* InfoPlist.strings */,
+				B598C71018287EE10030DE15 /* main.m */,
+				B598C71218287EE10030DE15 /* NFDateTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B598C73018287F370030DE15 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				B598C73118287F370030DE15 /* GHUnitIOS.framework */,
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,23 +217,22 @@
 			productReference = B52224BB1823384100C0A44E /* libNFDate.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B52224CA1823384100C0A44E /* NFDateTests */ = {
+		B598C70418287EE00030DE15 /* NFDateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B52224E11823384100C0A44E /* Build configuration list for PBXNativeTarget "NFDateTests" */;
+			buildConfigurationList = B598C72A18287EE10030DE15 /* Build configuration list for PBXNativeTarget "NFDateTests" */;
 			buildPhases = (
-				B52224C71823384100C0A44E /* Sources */,
-				B52224C81823384100C0A44E /* Frameworks */,
-				B52224C91823384100C0A44E /* Resources */,
+				B598C70118287EE00030DE15 /* Sources */,
+				B598C70218287EE00030DE15 /* Frameworks */,
+				B598C70318287EE00030DE15 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B52224D21823384100C0A44E /* PBXTargetDependency */,
 			);
 			name = NFDateTests;
 			productName = NFDateTests;
-			productReference = B52224CB1823384100C0A44E /* NFDateTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = B598C70518287EE00030DE15 /* NFDateTests.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -215,21 +256,38 @@
 			projectRoot = "";
 			targets = (
 				B52224BA1823384100C0A44E /* NFDate */,
-				B52224CA1823384100C0A44E /* NFDateTests */,
+				B598C6F3182879640030DE15 /* Documentation */,
+				B598C70418287EE00030DE15 /* NFDateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B52224C91823384100C0A44E /* Resources */ = {
+		B598C70318287EE00030DE15 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52224D91823384100C0A44E /* InfoPlist.strings in Resources */,
+				B598C70F18287EE10030DE15 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B598C6F71828798D0030DE15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"NextFaze\";\ncompanyID=\"com.nextfaze\";\ncompanyURL=\"http://nextfaze.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/doc\";\n# End constants\n/opt/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B52224B71823384100C0A44E /* Sources */ = {
@@ -237,34 +295,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B52224E81823386A00C0A44E /* NFDateFormatter.m in Sources */,
+				B598C6FD18287C430030DE15 /* NFDateMidnight.m in Sources */,
+				B598C70018287C670030DE15 /* NFDateBase.m in Sources */,
 				B52224C61823384100C0A44E /* NFDate.m in Sources */,
+				B598C6FA18287BB80030DE15 /* NFDateChainFormatter.m in Sources */,
 				B52224E91823386A00C0A44E /* NFDateTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B52224C71823384100C0A44E /* Sources */ = {
+		B598C70118287EE00030DE15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52224DB1823384100C0A44E /* NFDateTests.m in Sources */,
+				B598C73618287F9C0030DE15 /* NFDateTimeTests.m in Sources */,
+				B598C71118287EE10030DE15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		B52224D21823384100C0A44E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B52224BA1823384100C0A44E /* NFDate */;
-			targetProxy = B52224D11823384100C0A44E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		B52224D71823384100C0A44E /* InfoPlist.strings */ = {
+		B598C70D18287EE10030DE15 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B52224D81823384100C0A44E /* en */,
+				B598C70E18287EE10030DE15 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -346,6 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/NFDate.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/awilliams/work/NFDate/ThirdParty,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NFDate/NFDate-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -358,6 +416,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/NFDate.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/awilliams/work/NFDate/ThirdParty,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NFDate/NFDate-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -366,41 +428,75 @@
 			};
 			name = Release;
 		};
-		B52224E21823384100C0A44E /* Debug */ = {
+		B598C6F4182879640030DE15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B598C6F5182879640030DE15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B598C72B18287EE10030DE15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					$SRCROOT/ThirdParty,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NFDate/NFDate-Prefix.pch";
+				GCC_PREFIX_HEADER = "NFDateTests/NFDateTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "NFDateTests/NFDateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = $SRCROOT/ThirdParty;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		B52224E31823384100C0A44E /* Release */ = {
+		B598C72C18287EE10030DE15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					$SRCROOT/ThirdParty,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NFDate/NFDate-Prefix.pch";
+				GCC_PREFIX_HEADER = "NFDateTests/NFDateTests-Prefix.pch";
 				INFOPLIST_FILE = "NFDateTests/NFDateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = $SRCROOT/ThirdParty;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -423,12 +519,21 @@
 				B52224E01823384100C0A44E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B52224E11823384100C0A44E /* Build configuration list for PBXNativeTarget "NFDateTests" */ = {
+		B598C6F6182879640030DE15 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B52224E21823384100C0A44E /* Debug */,
-				B52224E31823384100C0A44E /* Release */,
+				B598C6F4182879640030DE15 /* Debug */,
+				B598C6F5182879640030DE15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B598C72A18287EE10030DE15 /* Build configuration list for PBXNativeTarget "NFDateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B598C72B18287EE10030DE15 /* Debug */,
+				B598C72C18287EE10030DE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
