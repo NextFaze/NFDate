@@ -234,6 +234,7 @@
 				B598C70118287EE00030DE15 /* Sources */,
 				B598C70218287EE00030DE15 /* Frameworks */,
 				B598C70318287EE00030DE15 /* Resources */,
+				B5E969181829E2D500E58BE8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -296,6 +297,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"NextFaze\";\ncompanyID=\"com.nextfaze\";\ncompanyURL=\"http://nextfaze.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/doc/NFDate\";\n# End constants\n/opt/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore ThirdParty \\\n\"${PROJECT_DIR}\"";
+		};
+		B5E969181829E2D500E58BE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/NFDateTests/RunTests.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

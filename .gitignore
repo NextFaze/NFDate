@@ -2,3 +2,4 @@ build
 _local
 xcuserdata
 .DS_Store
+test-results
